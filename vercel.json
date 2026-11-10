@@ -1,4 +1,7 @@
 {
+  "buildCommand": "node scripts/inject-gtm.js",
+  "outputDirectory": "dist",
+  "framework": null,
   "redirects": [
     { "source": "/medifacials/thank-you", "destination": "/thank-you/", "permanent": false },
     { "source": "/medifacials/thank-you/", "destination": "/thank-you/", "permanent": false }
