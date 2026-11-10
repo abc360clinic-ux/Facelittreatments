@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/medifacials/thank-you", "destination": "/thank-you/", "permanent": false },
+    { "source": "/medifacials/thank-you/", "destination": "/thank-you/", "permanent": false }
+  ]
+}
