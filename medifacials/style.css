@@ -59,27 +59,3 @@ h1{font-size:40px;line-height:1.25}.ul{text-decoration:underline;text-decoration
 
 .smart-aging-card{top:auto;bottom:18px;right:18px;max-width:calc(100% - 36px)}.smart-aging-heading{white-space:nowrap}
 @media(max-width:768px){.smart-aging-heading{white-space:normal;font-size:16px}}
-
-/* v2: ads landing polish */
-.review-track{animation:none;width:auto;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 16px}
-.review-card{min-width:300px;max-width:300px;height:auto;scroll-snap-align:center;display:block}
-.review-text{font-size:13.5px;line-height:1.55}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:28px 0}
-.step{background:#fff;border-radius:18px;padding:28px 22px;box-shadow:0 4px 16px rgba(0,0,0,.05);text-align:left}
-.step .n{display:inline-flex;width:36px;height:36px;border-radius:50%;background:#3a4d39;color:#fff;font-weight:700;align-items:center;justify-content:center;margin-bottom:12px}
-.step h3{font-size:19px;margin-bottom:6px}.step p{margin:0;color:#5c574f;line-height:1.55;font-size:15px}
-.steps-sec{background:transparent}
-@media(max-width:768px){
-.wrap{padding:28px 16px}.top{padding:8px 16px}
-h1{font-size:27px;line-height:1.25}.lead{font-size:15px;margin:14px 0}
-.hero-grid .btn,.doc-grid .btn,.steps-sec .btn,.wrap.center>p>.btn{display:block;text-align:center;width:100%}
-.hero-img img,.img-wrap img{aspect-ratio:16/10}
-.doc-img{aspect-ratio:1/1;object-position:top}
-.doctor-name{font-size:28px}.h2{font-size:24px}.sub{font-size:14px}
-.stats-box{margin-top:8px}.stat{white-space:normal}
-.steps{grid-template-columns:1fr;margin:18px 0}.step{padding:20px}
-.tgrid{gap:10px}.tcard figcaption{font-size:14px}
-.reviews{padding:28px 0}.review-card{min-width:82vw;max-width:82vw}
-
-.cnf-footer{padding:40px 20px}.footer-title{font-size:24px}.footer-text{font-size:15px}.loc-box p{font-size:15px}
-}
