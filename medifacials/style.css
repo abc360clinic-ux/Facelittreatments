@@ -140,3 +140,13 @@ body{padding-bottom:64px}
 @media(min-width:769px){.sticky{left:20px;right:20px;bottom:20px;width:auto;background:transparent;box-shadow:none;padding:0;justify-content:space-between;pointer-events:none}.sticky .btn{flex:none;pointer-events:auto;padding:14px 26px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.25)}}
 
 .reviews,.skin-unique-section,.cnf-vs,.benefits-wrap,.faq-sec,.reels-sec{content-visibility:auto;contain-intrinsic-size:auto 700px}
+
+.expect{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.expect .h2{margin:0 0 18px;font-size:32px}.expect .eyebrow{font-size:11px;letter-spacing:2px;color:#986a3e;text-transform:uppercase;margin:0 0 8px}
+.expect-list{list-style:none;margin:0;padding:0}.expect-list li{position:relative;padding:0 0 18px 34px}
+.expect-list li:before{content:"\2713";position:absolute;left:0;top:1px;width:22px;height:22px;border-radius:50%;background:#3a4d39;color:#fff;font-size:12px;display:flex;align-items:center;justify-content:center}
+.expect-list b{display:block;font:700 17px Lora,serif;margin-bottom:2px}.expect-list span{color:#5c574f;font-size:15px;line-height:1.55}
+.expect-img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:32px;background:#fff;border-radius:18px;padding:22px 12px;box-shadow:0 4px 16px rgba(0,0,0,.05);text-align:center}
+.why div+div{border-left:1px solid #eadfce}.why b{display:block;font:700 28px Lora,serif;color:#3a4d39}.why span{font-size:13px;color:#5c574f}
+@media(max-width:768px){.expect{grid-template-columns:1fr;gap:20px}.expect .h2{font-size:24px}.expect-list li{padding-bottom:14px}.why{grid-template-columns:1fr 1fr;gap:16px 0;margin-top:20px}.why div:nth-child(3){border-left:0}.why b{font-size:24px}}
