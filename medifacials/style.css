@@ -72,3 +72,4 @@ h1{font-size:40px;line-height:1.25}.ul{text-decoration:underline;text-decoration
 .map{width:100%;max-width:1200px;height:320px;border:0;border-radius:16px}
 @media(max-width:768px){.faq summary{font-size:15px;padding:16px 44px 16px 16px}.faq details p{padding:0 16px 16px;font-size:14px}.map{height:240px}}
 @media(max-width:768px){.smart-aging-card{bottom:-22px;right:50%;transform:translateX(50%);width:max-content;max-width:calc(100% - 24px);padding:12px 16px;text-align:center}.smart-aging-heading{font-size:15px}.img-wrap{margin-bottom:44px}}
+@media(max-width:768px){.hero-grid>div:first-child>.btn{justify-self:center}.doc-grid>div>p:last-child{text-align:center}}
