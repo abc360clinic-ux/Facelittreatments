@@ -87,3 +87,8 @@ html{scroll-padding-top:12px}
 .fmsg{margin:12px 0 0;font-size:14px;line-height:1.5}.fmsg.ok{color:#2d6a3e;font-weight:600}.fmsg.err{color:#b3261e}.fmsg a{color:inherit;font-weight:600}
 .fnote{font-size:12px;color:#7d7d7d;margin:16px 0 0}
 @media(max-width:768px){.book-sec{padding:28px 16px}.book-box{padding:24px 18px}}
+
+.thanks{min-height:70vh;display:flex;align-items:center;justify-content:center;padding:40px 16px;background:#f7ecdf}
+.thanks-box{max-width:520px;text-align:center;background:#fff;border-radius:20px;padding:40px 28px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
+.thanks-box h1{font-size:34px;margin:12px 0}.thanks-box .btn{margin-top:20px}.thanks-box .fnote{font-size:14px;color:#5c574f}.thanks-box a:not(.btn){color:#3a4d39;font-weight:600}
+.tick{width:64px;height:64px;border-radius:50%;background:#3a4d39;color:#fff;font-size:34px;display:flex;align-items:center;justify-content:center;margin:0 auto}
