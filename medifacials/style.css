@@ -52,10 +52,8 @@ h1{font-size:40px;line-height:1.25}.ul{text-decoration:underline;text-decoration
 
 @media(max-width:768px){.hero-grid{gap:0}.hero-grid>div:first-child,.hero-img{display:contents}.hero-grid h1{order:1}.lead{order:2}.img-wrap{order:3;margin:0 0 24px}.checks{order:4}.hero-grid>div:first-child>.btn{order:5;justify-self:start}.stats-box{order:6}}
 
-.reels{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 20px 20px;justify-content:center}
-.reel{flex:0 0 200px;aspect-ratio:9/16;scroll-snap-align:center;border:0;border-radius:18px;background:linear-gradient(160deg,#3a4d39,#2d3c2d);color:#fdf7ef;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;font:600 15px Onest,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.12)}
-.play{width:56px;height:56px;border-radius:50%;background:#fdf7ef;color:#3a4d39;display:flex;align-items:center;justify-content:center;padding-left:4px}
-#reelDlg{border:0;padding:0;border-radius:18px;width:min(92vw,380px);height:min(86vh,720px);background:#000;overflow:hidden}#reelDlg::backdrop{background:rgba(0,0,0,.7)}
-#reelDlg iframe{width:100%;height:100%;border:0;background:#fff}.reel-x{position:absolute;top:6px;right:8px;z-index:2;width:34px;height:34px;border:0;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;font-size:22px;line-height:1;cursor:pointer}
-@media(max-width:768px){.reels{justify-content:flex-start}.reel{flex-basis:70vw}}
+.reels{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 20px 20px}
+.reel{flex:0 0 340px;height:620px;scroll-snap-align:center;border-radius:18px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.reel iframe{width:100%;height:100%;border:0}
+@media(max-width:768px){.reel{flex-basis:calc(100vw - 48px);max-width:380px}}
 @media(max-width:768px){.doc-grid{gap:0}.doc-grid>div{display:contents}.doc-grid .eyebrow{order:1}.doctor-name{order:2}.cred-row{order:3}.cnf-section-text{order:4}.doc-img{order:5;margin:0 0 24px}.cnf-features-wrapper{order:6}.doc-grid>div>p:last-child{order:7}}
