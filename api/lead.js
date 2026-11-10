@@ -11,7 +11,7 @@ module.exports = async (req, res) => {
   const concern = String(b.concern || '').trim().slice(0, 80);
   if (!name || !/^[6-9]\d{9}$/.test(phone) || !concern || !b.consent) return res.status(400).json({ ok: false, error: 'invalid' });
   const key = process.env.RESEND_API_KEY, to = process.env.LEAD_TO_EMAIL;
-  if (!key || !to) return res.status(500).json({ ok: false, error: 'not_configured', missing: [!key && 'RESEND_API_KEY', !to && 'LEAD_TO_EMAIL'].filter(Boolean) });
+  if (!key || !to) return res.status(500).json({ ok: false, error: 'not_configured' });
   let r, detail = '';
   try { r = await fetch('https://api.resend.com/emails', {
     method: 'POST',
@@ -25,5 +25,5 @@ module.exports = async (req, res) => {
   }); } catch (e) { detail = String(e); }
   if (r && !r.ok) detail = (await r.text()).slice(0, 300);
   if (!r || !r.ok) console.error('resend failed', detail);
-  return res.status(r && r.ok ? 200 : 502).json({ ok: !!(r && r.ok), error: r && r.ok ? undefined : 'send_failed', detail: r && r.ok ? undefined : detail }); // ponytail: detail is for debugging, drop once delivery works
+  return res.status(r && r.ok ? 200 : 502).json({ ok: !!(r && r.ok), error: r && r.ok ? undefined : 'send_failed' });
 };
