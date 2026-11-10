@@ -59,3 +59,4 @@ h1{font-size:40px;line-height:1.25}.ul{text-decoration:underline;text-decoration
 
 .smart-aging-card{top:auto;bottom:18px;right:18px;max-width:calc(100% - 36px)}.smart-aging-heading{white-space:nowrap}
 @media(max-width:768px){.smart-aging-heading{white-space:normal;font-size:16px}}
+@media(max-width:768px){.benefits-section{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:16px}.benefit-card{width:auto;padding:18px 12px;border-radius:16px}.benefit-card:last-child{grid-column:1/-1;justify-self:center;width:calc(50% - 6px)}.benefit-icon{width:48px;height:48px;font-size:22px;margin-bottom:10px}.benefit-card h3{font-size:15px;margin:6px 0}.benefit-card p{font-size:12.5px}.benefits-wrap .h2{font-size:22px}.benefits-wrap .sub{font-size:14px}}
