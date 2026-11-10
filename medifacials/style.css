@@ -124,3 +124,4 @@ html{scroll-padding-top:12px}
 }
 /* desktop: a little less air */
 @media(min-width:769px){.wrap{padding:32px 20px}.reviews,.benefits-wrap{padding-top:32px}.cnf-vs{padding:32px 20px}.skin-heading{font-size:42px}}
+@media(max-width:768px){.doc-img{aspect-ratio:1/1;object-position:50% 0}}
