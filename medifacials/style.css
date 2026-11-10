@@ -8,7 +8,7 @@ img{max-width:100%;height:auto;display:block}h1,h2,h3{font-family:Lora,serif;mar
 h1{font-size:40px;line-height:1.25}.ul{text-decoration:underline;text-decoration-color:#3a4d39;text-decoration-thickness:3px;text-underline-offset:6px}
 .lead{font-size:16px;line-height:1.6;margin:20px 0}.checks{list-style:none;padding:0;margin:0 0 24px;font-size:14px;line-height:1.5}
 .checks li{padding-left:28px;position:relative;margin:10px 0}.checks li:before{content:"✔";position:absolute;left:0;top:0;width:18px;height:18px;border-radius:50%;background:#3a4d39;color:#fff;font-size:11px;display:flex;align-items:center;justify-content:center;margin-top:2px}
-.hero-img{position:relative}.hero-img>img{border-radius:20px;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top}
+.hero-img,.img-wrap{position:relative}.hero-img img{border-radius:20px;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:top}
 .smart-aging-card{background:#fff;padding:20px 28px;border-radius:18px;box-shadow:0 6px 20px rgba(0,0,0,.08);position:absolute;right:0;top:calc(56% - 48px)}
 .clinic-name{display:block;font-size:13px;color:#7d7d7d;margin-bottom:4px}.smart-aging-heading{font:600 18px/1.3 Georgia,serif;margin:0}
 .stats-box{margin:48px 0 0;background:#fff;padding:16px 10px;border-radius:18px;box-shadow:0 8px 28px rgba(0,0,0,.08);display:flex;align-items:center;gap:12px}
@@ -49,3 +49,12 @@ h1{font-size:40px;line-height:1.25}.ul{text-decoration:underline;text-decoration
 .sticky{position:fixed;left:0;right:0;bottom:0;display:flex;gap:8px;padding:8px;background:#fff;box-shadow:0 -4px 16px rgba(0,0,0,.1);z-index:9}.sticky .btn{flex:1;text-align:center}.btn-call{background:#2d3c2d}.btn-wa{background:#25D366}
 @media(max-width:768px){.hero-grid,.doc-grid,.cnf-vs-grid{grid-template-columns:1fr}h1{font-size:30px}.doctor-name{font-size:30px}.cnf-section-text{font-size:14px}.h2{font-size:26px}.skin-heading{font-size:32px}.skin-subtext{font-size:16px}.tgrid{grid-template-columns:repeat(2,1fr)}.num{font-size:20px}.label{font-size:11px}.smart-aging-card{padding:14px 18px;top:calc(56% - 130px)}.hero-img>img{aspect-ratio:4/3}.cnf-card{padding:24px}.review-card{min-width:230px;max-width:230px}}
 .top img{width:auto;height:44px}
+
+@media(max-width:768px){.hero-grid{gap:0}.hero-grid>div:first-child,.hero-img{display:contents}.hero-grid h1{order:1}.lead{order:2}.img-wrap{order:3;margin:0 0 24px}.checks{order:4}.hero-grid>div:first-child>.btn{order:5;justify-self:start}.stats-box{order:6}}
+
+.reels{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:8px 20px 20px;justify-content:center}
+.reel{flex:0 0 200px;aspect-ratio:9/16;scroll-snap-align:center;border:0;border-radius:18px;background:linear-gradient(160deg,#3a4d39,#2d3c2d);color:#fdf7ef;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;font:600 15px Onest,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.play{width:56px;height:56px;border-radius:50%;background:#fdf7ef;color:#3a4d39;display:flex;align-items:center;justify-content:center;padding-left:4px}
+#reelDlg{border:0;padding:0;border-radius:18px;width:min(92vw,380px);height:min(86vh,720px);background:#000;overflow:hidden}#reelDlg::backdrop{background:rgba(0,0,0,.7)}
+#reelDlg iframe{width:100%;height:100%;border:0;background:#fff}.reel-x{position:absolute;top:6px;right:8px;z-index:2;width:34px;height:34px;border:0;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;font-size:22px;line-height:1;cursor:pointer}
+@media(max-width:768px){.reels{justify-content:flex-start}.reel{flex-basis:70vw}}
