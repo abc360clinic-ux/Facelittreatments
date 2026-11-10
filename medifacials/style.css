@@ -105,3 +105,22 @@ html{scroll-padding-top:12px}
 .step .n{display:inline-flex;width:36px;height:36px;border-radius:50%;background:#3a4d39;color:#fff;font-weight:700;align-items:center;justify-content:center;margin-bottom:12px}
 .step h3{font-size:19px;margin-bottom:6px}.step p{margin:0;color:#5c574f;line-height:1.55;font-size:15px}
 @media(max-width:768px){.steps{grid-template-columns:1fr;margin:18px 0}.step{padding:20px}}
+
+/* spacing tighten (mobile) */
+@media(max-width:768px){
+.wrap{padding:24px 16px}.hero{padding-bottom:4px}.marquee{margin-top:12px}
+.h2{margin-bottom:6px}.sub{margin:0 16px 14px}
+.doc-img{aspect-ratio:5/4}.cnf-features-wrapper{gap:12px}.cnf-section-text{margin-bottom:16px}
+.reviews{padding:24px 0}.review-section{padding:4px 0}
+.skin-tags{gap:8px;margin-bottom:16px}.tag{padding:7px 11px;font-size:13px}
+.skin-heading{font-size:28px;margin-bottom:10px}.skin-subtext{font-size:15px}.banner{max-width:300px;margin:16px auto}
+.tgrid{margin:14px 0;gap:10px}
+.cnf-vs{padding:24px 16px}.cnf-vs-grid{gap:14px}.cnf-card{padding:20px}.cnf-card h2{font-size:19px;margin-bottom:10px}.cnf-badge{margin-bottom:10px;padding:6px 10px;font-size:13px}.cnf-card ul{font-size:14px;line-height:1.55}.cnf-card li{margin:8px 0}
+.cnf-note{font-size:13px}
+.benefits-wrap{padding:24px 0 0}.benefits-wrap .center+.benefits-section{padding-top:8px}.benefits-wrap p.center{padding:16px 0!important}
+.faq-sec{padding-top:12px}.faq{margin-top:12px}.faq details{margin-bottom:8px}
+.book-sec{padding:20px 16px}
+.cnf-footer{padding:32px 20px 28px}.footer-container{gap:16px}.footer-title{font-size:22px;margin-bottom:8px}.footer-text{font-size:14px}.footer-rating{margin-top:8px}.rating-number{font-size:26px}.rating-reviews{font-size:14px}.loc-box p{font-size:14px}.footer-bottom{font-size:13px;line-height:1.6}.map{height:220px}
+}
+/* desktop: a little less air */
+@media(min-width:769px){.wrap{padding:32px 20px}.reviews,.benefits-wrap{padding-top:32px}.cnf-vs{padding:32px 20px}.skin-heading{font-size:42px}}
