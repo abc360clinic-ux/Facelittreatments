@@ -58,7 +58,7 @@
 var TEL="tel:+917356657222",WA="917356657222",main=document.getElementById("leadForm"),dlg=document.getElementById("leadDlg"),via="";
 var f2=document.createElement("form");f2.className="lead-form";f2.noValidate=true;f2.innerHTML=main.innerHTML;dlg.querySelector(".dlg-form").appendChild(f2);
 function wire(f,done){var m=f.querySelector(".fmsg"),b=f.querySelector("button[type=submit]");
-f.addEventListener("submit",function(e){e.preventDefault();m.className="fmsg";var d=Object.fromEntries(new FormData(f));d.consent=f.elements.consent.checked;d.via=f===f2?via:"form";var p=d.phone.replace(/\D/g,"");
+f.addEventListener("submit",function(e){e.preventDefault();m.className="fmsg";var d=Object.fromEntries(new FormData(f));d.consent=f.elements.consent.checked;d.via=f===f2?via:"form";d.city="Trivandrum";var p=d.phone.replace(/\D/g,"");
 if(!d.name.trim()||!/^[6-9]\d{9}$/.test(p)||!d.concern||!d.consent){m.textContent="Please enter your name, a valid 10-digit mobile number, choose a concern and tick the consent box.";m.className="fmsg err";return}
 var label=b.textContent;b.disabled=true;b.textContent="Sending...";
 fetch("/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;done(d)}).catch(function(){m.innerHTML="Sorry, something went wrong. Please call <a href=\""+TEL+"\">+91 73566 57222</a>.";m.className="fmsg err"}).finally(function(){b.disabled=false;b.textContent=label})})}
