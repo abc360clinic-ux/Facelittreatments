@@ -12,6 +12,16 @@
       "source": "/medifacials/thank-you/",
       "destination": "/thank-you/",
       "permanent": false
+    },
+    {
+      "source": "/medifacials-trivandrum/thank-you",
+      "destination": "/thank-you/",
+      "permanent": false
+    },
+    {
+      "source": "/medifacials-trivandrum/thank-you/",
+      "destination": "/thank-you/",
+      "permanent": false
     }
   ],
   "headers": [
@@ -32,6 +42,16 @@
           "value": "public, max-age=604800"
         }
       ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/medifacials-trivandrum",
+      "destination": "/medifacials/index.html"
+    },
+    {
+      "source": "/medifacials-trivandrum/",
+      "destination": "/medifacials/index.html"
     }
   ]
 }
