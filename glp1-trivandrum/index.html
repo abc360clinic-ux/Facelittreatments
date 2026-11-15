@@ -137,6 +137,19 @@ body{font-size:16px;-webkit-text-size-adjust:100%}
 .mbar .pill{font-size:16px}
 }
 @media(max-width:900px){.eyebrow{font-size:12px!important}.g-grid .badge{white-space:nowrap;padding:11px 16px}}
+
+/* ---- mobile: match reference exactly ---- */
+@media(max-width:900px){
+.mbar{display:none!important}body{padding-bottom:0!important}
+.fab{display:flex!important;width:50px;height:50px;bottom:16px;font-size:0;box-shadow:0 4px 14px rgba(0,0,0,.25)}.fab-wa{left:16px}.fab-call{right:16px}
+.g-hero{padding:8px 20px 40px}
+.nav{padding:10px 20px}.nav .pill{font-size:15px;padding:13px 22px}
+.g-grid .badge{background:#eef2ec;font-size:13.5px;padding:11px 18px;margin-top:6px}
+.g-grid .g-h1{font-size:clamp(23px,6.6vw,27px);line-height:1.22;margin:16px 0 16px;letter-spacing:0}
+.g-grid .g-img{width:62%;border-radius:20px;margin:0 0 20px}
+.g-grid .g-lead{font-size:16px;line-height:1.45;margin:0 0 22px}
+.g-grid .pill-wide{font-size:16px;padding:16px 14px;font-weight:600}
+}
 </style></head><body>
 <header class="nav"><a href="/glp1-trivandrum/"><img src="/assets/facelit-logo.svg" alt="Facelit" width="140" height="44"></a>
 <nav><a href="#steps">How it Works</a><a href="#benefits">Benefits</a><a href="#programme">Programme</a><a href="#doctor">Team</a><a href="#faq">FAQs</a></nav><a class="pill" href="#book" data-lead="form">Book Consultation</a></header>
@@ -219,7 +232,7 @@ body{font-size:16px;-webkit-text-size-adjust:100%}
 <div><h3>Visit Our Clinic</h3><iframe class="map" title="Facelit location" referrerpolicy="no-referrer-when-downgrade" data-src="https://www.google.com/maps?q=Facelit%20Aesthetic%20and%20Longevity%20Clinic%2C%20Kowdiar%2C%20Thiruvananthapuram&amp;output=embed"></iframe></div></div>
 <p class="copy">© 2026 Facelit. All rights reserved. · <a href="https://facelit.in/">www.facelit.in</a></p></section>
 </main>
-<a class="fab fab-wa" aria-label="Chat on WhatsApp" href="#book" data-lead="whatsapp">💬</a><a class="fab fab-call" aria-label="Call the clinic" href="#book" data-lead="call">📞</a>
+<a class="fab fab-wa" aria-label="Chat on WhatsApp" href="#book" data-lead="whatsapp"><svg viewBox="0 0 24 24" width="24" height="24" fill="#fff" aria-hidden="true"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/><circle cx="8" cy="10" r="1.3" fill="#2d4a3a"/><circle cx="12" cy="10" r="1.3" fill="#2d4a3a"/><circle cx="16" cy="10" r="1.3" fill="#2d4a3a"/></svg></a><a class="fab fab-call" aria-label="Call the clinic" href="#book" data-lead="call"><svg viewBox="0 0 24 24" width="24" height="24" fill="#fff" aria-hidden="true"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></a>
 <div class="mbar"><a class="ic ic-call" href="#book" data-lead="call" aria-label="Call the clinic">📞</a><a class="ic ic-wa" href="#book" data-lead="whatsapp" aria-label="Chat on WhatsApp">💬</a><a class="pill" href="#book" data-lead="form">Book My Consultation</a></div>
 <dialog id="leadDlg"><button type="button" class="dlg-x" aria-label="Close">&times;</button><h2 class="dlg-title"></h2><p class="sub dlg-sub"></p><div class="dlg-form"></div><p class="fnote">Kowdiar, Trivandrum. Your details are used only to contact you about your enquiry.</p></dialog>
 <script>(function(){
