@@ -167,6 +167,24 @@ body{font-size:16px;-webkit-text-size-adjust:100%}
 .ic2{padding:0;overflow:hidden;justify-content:flex-start}.ic2 .ic2img{width:100%;height:240px;object-fit:cover;object-position:50% 72%;background:#fff}
 .ic2 .opt{margin:22px 30px 12px}.ic2 h3{margin:0 30px 10px}.ic2 p{margin:0 30px 30px}
 @media(max-width:900px){.ic1 li{grid-template-columns:60px 1fr;column-gap:14px}.ic1 .th{width:60px;height:60px;border-radius:14px;font-size:26px}.ic2 .ic2img{height:190px}.ic2 .opt{margin:18px 18px 10px}.ic2 h3{margin:0 18px 8px}.ic2 p{margin:0 18px 22px}}
+
+/* ---- form redesign ---- */
+.fgrid{grid-template-columns:1fr 1.15fr 1fr;align-items:start}
+.foot .ct a{color:#1c1a17;font-weight:600;text-decoration:none}.foot .ct a:hover{text-decoration:underline}
+.fgrid>div:nth-child(2){background:#fff;border-radius:24px;padding:30px 28px 26px;box-shadow:0 14px 40px rgba(0,0,0,.08);border:1px solid #e8ece6}
+.fgrid>div:nth-child(2) h3{font-size:25px;margin-bottom:8px}.fgrid>div:nth-child(2)>p{margin:0 0 20px!important;font-size:15px;line-height:1.5;color:#666}
+.gf{gap:12px}
+.gf input:not([type=checkbox]),.gf select{height:54px;padding:0 18px;border:1.5px solid #dfe5dd;border-radius:14px;font:500 16px Onest,sans-serif;color:#1c1a17;background:#fafbf9;transition:border-color .15s,box-shadow .15s}
+.gf input::placeholder{color:#8a928b;font-weight:400}
+.gf input:focus,.gf select:focus{outline:0;border-color:#3f7a58;background:#fff;box-shadow:0 0 0 4px rgba(63,122,88,.15)}
+.gf select{-webkit-appearance:none;appearance:none;padding-right:44px;color:#1c1a17;text-overflow:ellipsis;background:#fafbf9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1.5l6 6 6-6' fill='none' stroke='%232d4a3a' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 18px center}
+.gf select:invalid,.gf select:has(option[value=""]:checked){color:#8a928b}
+.gf .chk{display:flex;align-items:flex-start;gap:10px;font-size:13.5px;line-height:1.45;color:#555;margin:2px 0 4px}.gf .chk input{width:18px;height:18px;margin:2px 0 0;flex:none;accent-color:#2d4a3a}
+.gf button.pill{height:56px;padding:0 20px;font-size:17px;border-radius:14px;margin-top:2px}
+.gf .fmsg:empty{display:none}.gf .fmsg{margin:2px 0 0;line-height:1.4}.gf .fine{margin:2px 0 0;text-align:center;font-size:12.5px;color:#777}
+.map{height:100%;min-height:440px}
+#leadDlg .gf input:not([type=checkbox]),#leadDlg .gf select{height:52px}
+@media(max-width:900px){.fgrid{grid-template-columns:minmax(0,1fr)}.fgrid>div:nth-child(2){padding:24px 18px 20px;border-radius:20px}.fgrid>div:nth-child(2) h3{font-size:22px}.map{min-height:240px;height:240px}}
 </style></head><body>
 <header class="nav"><a href="/glp1-trivandrum/"><img src="/assets/facelit-logo.svg" alt="Facelit" width="140" height="44"></a>
 <nav><a href="#steps">How it Works</a><a href="#benefits">Benefits</a><a href="#programme">Programme</a><a href="#doctor">Team</a><a href="#faq">FAQs</a></nav><a class="pill" href="#book" data-lead="form">Book Consultation</a></header>
@@ -242,7 +260,7 @@ body{font-size:16px;-webkit-text-size-adjust:100%}
 <input name="phone" type="tel" inputmode="numeric" autocomplete="tel-national" required maxlength="10" placeholder="Mobile number (10 digits)">
 <input name="area" type="text" maxlength="60" placeholder="Area or pincode">
 <select name="concern" required><option value="">Your main goal</option><option>Lose weight</option><option>Manage a condition (diabetes, PCOS, thyroid)</option><option>Improve overall metabolic health</option><option>Maintain my results</option></select>
-<select name="target"><option value="">How much weight would you like to lose?</option><option>Under 5 kg</option><option>5–15 kg</option><option>15–30 kg</option><option>More than 30 kg</option><option>Not sure</option></select>
+<select name="target"><option value="">Weight you want to lose</option><option>Under 5 kg</option><option>5–15 kg</option><option>15–30 kg</option><option>More than 30 kg</option><option>Not sure</option></select>
 <label class="chk"><input type="checkbox" name="consent" required><span>I agree to be contacted by Facelit about my enquiry.</span></label>
 <button class="pill pill-wide" type="submit">Request My Callback</button><p class="fmsg" role="status" aria-live="polite"></p><p class="fine">🔒 Your details are used only to contact you about your enquiry.</p></form></div>
 <div><h3>Visit Our Clinic</h3><iframe class="map" title="Facelit location" referrerpolicy="no-referrer-when-downgrade" data-src="https://www.google.com/maps?q=Facelit%20Aesthetic%20and%20Longevity%20Clinic%2C%20Kowdiar%2C%20Thiruvananthapuram&amp;output=embed"></iframe></div></div>
