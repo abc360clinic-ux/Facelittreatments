@@ -61,6 +61,35 @@ body{background:#f4f6f2}
 .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}.dark .pill.ghost{background:transparent;border:2px solid #9fb8a8}
 .pill{cursor:pointer}#leadDlg .gf{text-align:left}#leadDlg .pill-wide{width:100%;border:0;font:700 17px Onest;cursor:pointer}
 .gf button.pill{border:0;font:700 19px Onest,sans-serif}
+
+/* ---- mobile-first fixes ---- */
+html,body{overflow-x:hidden}.g-grid>*,.fgrid>*,.bmi2>*,.doc-grid>*{min-width:0}
+.mbar{display:none}
+@media(max-width:900px){
+.g-grid{grid-template-columns:minmax(0,1fr)}.fgrid,.bmi2{grid-template-columns:minmax(0,1fr)}
+.nav{position:static;padding:10px 16px}.nav img{height:38px}.nav .pill{padding:11px 16px;font-size:14px}
+.g-hero{padding:16px 16px 36px}.g-grid{gap:22px}
+.badge{font-size:13px;padding:10px 16px;line-height:1.35}
+.g-h1{font-size:33px;line-height:1.15;margin:16px 0 14px}.g-lead{font-size:17px;margin:0 0 18px}
+.ticks li{font-size:15px;margin:9px 0}.ticks{margin-bottom:18px}
+.pill-wide{font-size:17px;padding:17px 14px}.cta-note{font-size:13px}
+.tiles{gap:8px;margin:20px 0 12px}.tile{padding:14px 12px;min-height:0;border-radius:16px}.tile b{font-size:22px;margin-bottom:4px}.tile span{font-size:12.5px}
+.g-img{border-radius:22px;aspect-ratio:4/5;max-height:440px}.g-img img{object-position:50% 25%}
+.sec{padding:38px 0}.c{padding:0 16px}.h,.h.serif{font-size:25px;line-height:1.25}.sb{font-size:16px;margin-bottom:22px}.eb{font-size:12px}
+.strip{grid-template-columns:minmax(0,1fr);padding:6px 16px;gap:0;border-radius:18px}.strip div{padding:14px 0;border:0;border-bottom:1px solid #e8ece6;display:grid;grid-template-columns:44px 1fr;column-gap:12px}.strip div:last-child{border:0}.strip i{grid-row:1/3;font-size:26px;margin:0;align-self:center}.strip b{font-size:16px;margin:0}.strip span{font-size:14px}
+.bl,.br{padding:22px 18px}.bmi2{border-radius:22px}.seg button{padding:10px 20px;font-size:15px}.row output{font-size:22px}.bn{font-size:46px}.chip{font-size:12px;padding:8px 12px}.msg{padding:14px;font-size:15px}
+.pgrid{grid-template-columns:minmax(0,1fr);gap:10px;margin:20px 0}.pcard{display:grid;grid-template-columns:48px 1fr;column-gap:14px;padding:16px}.pcard .ic{grid-row:1/3;align-self:center}.pcard h3{margin:0 0 3px;font-size:16px}
+.bgrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:22px -16px;padding:4px 16px 14px;-webkit-overflow-scrolling:touch;scrollbar-width:none}.bgrid::-webkit-scrollbar{display:none}.bc2{flex:0 0 78%;scroll-snap-align:center}.bc2 i{aspect-ratio:auto;height:84px;font-size:38px}.bc2 p{font-size:14.5px}
+.dark{padding:44px 0}.dark h2{font-size:26px}.dark p{font-size:15.5px}.btns{flex-direction:column}.btns .pill{width:100%;text-align:center;padding:16px}
+.four{grid-template-columns:minmax(0,1fr);gap:10px;margin:22px 0}.f4{padding:16px 16px 16px 16px;display:grid;grid-template-columns:48px 1fr;column-gap:14px}.f4 i{grid-row:1/3;width:48px;height:48px;margin:0;align-self:center}.f4 h3{font-size:17px;margin:0 0 3px}.f4 em{font-size:30px;top:8px;right:14px}.f4 p{font-size:14px}
+.gq summary{font-size:16px;padding:18px 2px}.gq p{font-size:15px}
+.doc-grid{gap:22px}.doctor-name{font-size:28px!important}.cnf-features-wrapper{grid-template-columns:1fr 1fr!important;gap:12px!important}
+.foot{padding:40px 16px 24px}.foot h3{font-size:23px;margin-bottom:16px}.fgrid{gap:34px}.gf input,.gf select{font-size:16px;padding:16px 18px}.map{height:240px}
+.fab{display:none}body{padding-bottom:86px}
+.mbar{display:flex;position:fixed;left:0;right:0;bottom:0;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#fff;box-shadow:0 -4px 18px rgba(0,0,0,.14);z-index:20}
+.mbar .pill{flex:1;text-align:center;padding:15px 8px;font-size:16px}.mbar .ic{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;color:#fff;text-decoration:none;flex:none}.mbar .ic-wa{background:#25d366}.mbar .ic-call{background:#2d4a3a}
+}
+@media(max-width:380px){.g-h1{font-size:30px}.tile b{font-size:19px}}
 </style></head><body>
 <header class="nav"><a href="/glp1-trivandrum/"><img src="/assets/facelit-logo.svg" alt="Facelit" width="140" height="44"></a>
 <nav><a href="#steps">How it Works</a><a href="#benefits">Benefits</a><a href="#programme">Programme</a><a href="#doctor">Team</a><a href="#faq">FAQs</a></nav><a class="pill" href="#book" data-lead="form">Book Consultation</a></header>
@@ -141,6 +170,7 @@ body{background:#f4f6f2}
 <p class="copy">© 2026 Facelit. All rights reserved. · <a href="https://facelit.in/">www.facelit.in</a></p></section>
 </main>
 <a class="fab fab-wa" aria-label="Chat on WhatsApp" href="#book" data-lead="whatsapp">💬</a><a class="fab fab-call" aria-label="Call the clinic" href="#book" data-lead="call">📞</a>
+<div class="mbar"><a class="ic ic-call" href="#book" data-lead="call" aria-label="Call the clinic">📞</a><a class="ic ic-wa" href="#book" data-lead="whatsapp" aria-label="Chat on WhatsApp">💬</a><a class="pill" href="#book" data-lead="form">Book My Consultation</a></div>
 <dialog id="leadDlg"><button type="button" class="dlg-x" aria-label="Close">&times;</button><h2 class="dlg-title"></h2><p class="sub dlg-sub"></p><div class="dlg-form"></div><p class="fnote">Kowdiar, Trivandrum. Your details are used only to contact you about your enquiry.</p></dialog>
 <script>(function(){
 var TEL="tel:+917356657222",WA="917356657222",w=document.getElementById("w"),h=document.getElementById("h"),u="ft",touched=0;
