@@ -21,23 +21,39 @@
 .acard .n{font:700 13px Onest;color:#986a3e;letter-spacing:1px}
 .steps-sec{background:#f7ecdf}
 @media(max-width:768px){.pgrid{grid-template-columns:repeat(2,1fr)}.agrid{grid-template-columns:1fr}}
+body{background:#f4f6f2}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px max(20px,calc((100% - 1200px)/2 + 20px));background:#f4f6f2;position:sticky;top:0;z-index:8}.nav img{height:44px;width:auto}
+.nav nav{display:flex;gap:34px;font-weight:600;font-size:16px}.nav nav a{color:#1c1a17;text-decoration:none}.nav nav a:hover{color:#1f4a38}
+.pill{display:inline-block;background:#2d4a3a;color:#fff;font-weight:600;padding:14px 28px;border-radius:999px;text-decoration:none}.pill-wide{display:block;text-align:center;font-size:18px;padding:18px}
+.g-hero{background:#f4f6f2;padding:30px 20px 60px}.g-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:center}
+.badge{display:inline-block;background:#e9eee7;color:#2d4a3a;font-weight:600;font-size:14px;padding:12px 22px;border-radius:999px}
+.g-h1{font:700 52px/1.15 Onest,sans-serif;color:#1d3a2c;margin:28px 0 24px}.g-lead{font-size:21px;line-height:1.6;color:#1c1a17;margin:0 0 30px}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0 14px}.tile{background:#fff;border:1px solid #e1e6df;border-radius:20px;padding:22px 20px;min-height:130px}
+.tile b{display:block;font:700 32px Onest,sans-serif;color:#2d4a3a;margin-bottom:6px}.tile span{font-size:15px;color:#6b7376;line-height:1.4}
+.g-img{background:#fff;border-radius:28px;overflow:hidden;aspect-ratio:3/4}.g-img img{width:100%;height:100%;object-fit:cover;object-position:top}
+.fab{position:fixed;bottom:22px;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:28px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.2);z-index:10}.fab-wa{left:22px;background:#2d4a3a}.fab-call{right:22px;background:#25a244}
+@media(max-width:900px){.nav nav{display:none}.g-grid{grid-template-columns:1fr;gap:30px}.g-h1{font-size:36px}.g-lead{font-size:17px}.fab{bottom:80px}.tile b{font-size:24px}}
 </style></head><body>
-<header class="top"><a href="/glp1-trivandrum/"><img src="/assets/facelit-logo.svg" alt="Facelit" width="140" height="44"></a><a class="btn btn-sm" href="#book">Talk to an Expert</a></header>
+<header class="nav"><a href="/glp1-trivandrum/"><img src="/assets/facelit-logo.svg" alt="Facelit" width="140" height="44"></a>
+<nav><a href="#steps">How it Works</a><a href="#benefits">Benefits</a><a href="#programme">Programme</a><a href="#doctor">Team</a><a href="#faq">FAQs</a></nav><a class="pill" href="#book">Get My Plan</a></header>
 <main>
-<section class="hero"><div class="wrap hero-grid"><div>
-<h1>GLP Weight Loss Treatment in Trivandrum, <span class="ul">Doctor-Supervised</span> at Kowdiar</h1>
-<p class="lead">A medically supervised weight loss programme for people in Thiruvananthapuram: diagnostics, a personalised plan, regular doctor reviews and nutrition support at Facelit, Jawahar Nagar, Kowdiar.</p>
-<ul class="checks"><li>Long hours at Technopark, a desk job or a busy family life, and the weight just keeps creeping up?</li><li>Searching “best weight loss doctor in Trivandrum”? Every plan starts with a consultation and tests, so the doctor knows what is driving your weight</li><li>Easy to reach from Kowdiar, Pattom, Vellayambalam, Kesavadasapuram, Sasthamangalam and across Trivandrum</li></ul>
-<a class="btn" href="#book">Speak to Our Weight Loss Doctor</a></div>
-<div class="hero-box bmi"><h2>Check your BMI</h2><p class="fine" style="margin:0">Move the sliders to see where you stand.</p>
+<section class="g-hero"><div class="g-grid"><div>
+<span class="badge">Trivandrum’s Doctor-Led Weight Loss Programme</span>
+<h1 class="g-h1">GLP Weight Loss Treatment in Trivandrum</h1>
+<p class="g-lead">Doctor-supervised GLP therapy with nutrition guidance and regular reviews, built around you and life in Kerala.</p>
+<a class="pill pill-wide" href="#book">Speak to Our Weight Loss Doctor</a>
+<div class="tiles"><div class="tile"><b>10+</b><span>Years of experience</span></div><div class="tile"><b>5000+</b><span>Happy patients</span></div><div class="tile"><b>4.9★</b><span>Google rating</span></div></div>
+<p class="fine">*Results vary based on metabolism, adherence and lifestyle.</p></div>
+<div class="g-img"><img fetchpriority="high" decoding="async" src="/assets/devi.webp" alt="Dr. Devi KR, Facelit Trivandrum" width="1143" height="1376"></div></div></section>
+
+<section class="wrap" id="bmi" style="max-width:560px"><div class="hero-box bmi"><h2>Check your BMI</h2><p class="fine" style="margin:0">Move the sliders to see where you stand.</p>
 <label>Weight <output id="wo">70 kg</output></label><input id="w" type="range" min="35" max="180" value="70">
 <label>Height <output id="ho">165 cm</output></label><input id="h" type="range" min="130" max="210" value="165">
 <p class="bmi-val" id="bv">25.7</p><div class="bmi-bar"><i id="bp"></i></div><p class="bmi-msg" id="bm"></p>
 <a class="btn" href="#book">Get My Personalised Plan</a>
-<p class="fine" style="margin-top:12px">BMI is a general guide, not a diagnosis. Your doctor will assess you in person. Results vary between individuals.</p></div></div>
-<div class="wrap" style="padding-top:0"><div class="stats-box"><div class="stat"><div class="num">10+</div><div class="label">Years Experience</div></div><div class="divider"></div><div class="stat"><div class="num">5000+</div><div class="label">Happy Patients</div></div><div class="divider"></div><div class="stat"><div class="num">4.9★</div><div class="label">Google Rating</div></div></div></div></section>
+<p class="fine" style="margin-top:12px">BMI is a general guide, not a diagnosis. Your doctor will assess you in person. Results vary between individuals.</p></div></div></section>
 
-<section class="wrap center"><h2 class="h2">What our GLP programme in Trivandrum includes</h2><p class="sub">More than a prescription: a doctor-led plan around it, designed for life in Kerala.</p>
+<section class="wrap center" id="programme"><h2 class="h2">What our GLP programme in Trivandrum includes</h2><p class="sub">More than a prescription: a doctor-led plan around it, designed for life in Kerala.</p>
 <div class="pgrid">
 <div class="pcard"><div class="ic">🩺</div><h3>Doctor Consultation</h3><p>A detailed history and health check before anything is prescribed.</p></div>
 <div class="pcard"><div class="ic">🔬</div><h3>Diagnostics</h3><p>Relevant blood tests to understand your metabolic health.</p></div>
@@ -49,14 +65,14 @@
 <div class="pcard"><div class="ic">🔁</div><h3>Maintenance Plan</h3><p>A plan to help you hold the result once you reach your goal.</p></div></div>
 <a class="btn" href="#book">Get My Personalised Plan</a></section>
 
-<section class="wrap doctor-section"><div class="doc-grid"><div><p class="eyebrow">Meet your doctor</p><h2 class="doctor-name">Dr. Devi KR</h2>
+<section class="wrap doctor-section" id="doctor"><div class="doc-grid"><div><p class="eyebrow">Meet your doctor</p><h2 class="doctor-name">Dr. Devi KR</h2>
 <div class="cred-row"><span class="cred-tag">MBBS</span><span class="cred-tag">MD General Physician</span><span class="cred-tag">Aesthetic &amp; Cosmetic Medicine</span></div>
 <p class="cnf-section-text">Weight is shaped by metabolism, hormones, sleep, stress and lifestyle, not just willpower. Kerala’s rice-based meals, festival feasting, humid weather that discourages outdoor exercise and long desk hours all play a part. At Facelit, Kowdiar, your doctor looks at the full picture before recommending a plan, and stays involved at every review.</p>
 <div class="cnf-features-wrapper"><div class="cnf-feature"><div class="cnf-feature-icon cnf-green">🛡️</div><div class="cnf-feature-text">Medically Supervised</div></div><div class="cnf-feature"><div class="cnf-feature-icon cnf-purple">👩‍⚕️</div><div class="cnf-feature-text">Doctor-Led Plan</div></div><div class="cnf-feature"><div class="cnf-feature-icon cnf-orange">❤️</div><div class="cnf-feature-text">Personalised Care</div></div><div class="cnf-feature"><div class="cnf-feature-icon cnf-yellow">📈</div><div class="cnf-feature-text">Progress Tracking</div></div></div>
 <p style="margin-top:24px"><a class="btn" href="#book">Book a Consultation</a></p></div>
 <img class="doc-img" loading="lazy" decoding="async" src="/assets/devi.webp" alt="Dr. Devi KR" width="1143" height="1376"></div></section>
 
-<section class="steps-sec"><div class="wrap center"><h2 class="h2">Our 4-step approach</h2><p class="sub">From your first visit at Kowdiar to keeping the weight off in everyday Trivandrum life.</p>
+<section class="steps-sec" id="steps"><div class="wrap center"><h2 class="h2">Our 4-step approach</h2><p class="sub">From your first visit at Kowdiar to keeping the weight off in everyday Trivandrum life.</p>
 <div class="agrid" style="grid-template-columns:repeat(4,1fr)">
 <div class="acard"><span class="n">STEP 1</span><h3>Assess</h3><p>Consultation and tests to find what is driving your weight.</p></div>
 <div class="acard"><span class="n">STEP 2</span><h3>Plan</h3><p>A personalised plan covering treatment, food and activity.</p></div>
@@ -64,7 +80,7 @@
 <div class="acard"><span class="n">STEP 4</span><h3>Maintain</h3><p>Guidance to help you keep the result for the long term.</p></div></div>
 <a class="btn" href="#book">Speak to Our Weight Loss Doctor</a></div></section>
 
-<section class="benefits-wrap" style="background:none"><div class="center"><h2 class="h2">What changes when the weight comes off</h2></div><div class="benefits-section">
+<section class="benefits-wrap" id="benefits" style="background:none"><div class="center"><h2 class="h2">What changes when the weight comes off</h2></div><div class="benefits-section">
 <div class="benefit-card"><div class="benefit-icon">👗</div><h3>Wear What You Love</h3><p>Sarees, outfits and everyday wear that feel right</p></div>
 <div class="benefit-card"><div class="benefit-icon">🚶</div><h3>Move With Ease</h3><p>Stairs, Kovalam walks and long days feel lighter</p></div>
 <div class="benefit-card"><div class="benefit-icon">📸</div><h3>Feel Good in Photos</h3><p>Be part of every moment without hesitation</p></div>
@@ -77,7 +93,7 @@
 <div class="cnf-card cnf-solution"><span class="cnf-badge">✨ Facelit Aesthetic &amp; Longevity Clinic</span><h2>A supervised, personalised approach in Trivandrum</h2><ul><li>Assessment by a doctor before any treatment.</li><li>Treatment only where it is medically suitable.</li><li>Nutrition guidance built around Kerala food, and activity advice that works in Trivandrum’s weather.</li><li>Regular reviews and a plan for maintaining results.</li></ul></div></div>
 <p class="cnf-note">Results vary between individuals. GLP medication is prescription-only and suitable only after medical assessment.</p></section>
 
-<section class="wrap faq-sec"><h2 class="h2 center">Frequently Asked Questions</h2><div class="faq">
+<section class="wrap faq-sec" id="faq"><h2 class="h2 center">Frequently Asked Questions</h2><div class="faq">
 <details><summary>What is GLP therapy?</summary><p>GLP medicines are prescription medicines that act on appetite and blood sugar regulation. They can help with weight loss when prescribed to the right person and used under medical supervision.</p></details>
 <details><summary>Is the programme suited to Kerala food and lifestyle?</summary><p>Yes. Your nutrition plan is built around the food you actually eat, such as rice, fish, coconut-based curries and festival meals, rather than a generic diet chart.</p></details>
 <details><summary>Am I suitable for it?</summary><p>That is decided by the doctor after a consultation and relevant tests. It is not suitable for everyone, and your doctor will tell you if another approach is better.</p></details>
@@ -101,7 +117,7 @@
 <footer class="cnf-footer"><div class="footer-container"><div><div class="footer-title">Facelit Aesthetic &amp; Longevity Clinic</div><p class="footer-text">Doctor-led weight loss, aesthetic and longevity care in Kowdiar, Thiruvananthapuram.</p><div class="footer-rating"><span class="rating-number">4.9</span><span class="rating-star">⭐</span><span class="rating-reviews">100+ Reviews</span></div></div>
 <div class="loc-box"><p>📍 Facelit, C 10, Jawahar Nagar, Kowdiar, Thiruvananthapuram, Kerala</p></div><iframe class="map" title="Facelit location" referrerpolicy="no-referrer-when-downgrade" data-src="https://www.google.com/maps?q=Facelit%20Aesthetic%20and%20Longevity%20Clinic%2C%20Kowdiar%2C%20Thiruvananthapuram&amp;output=embed"></iframe>
 <div class="footer-divider"></div><div class="footer-bottom">© 2026 Facelit. All rights reserved.<br><a href="https://facelit.in/">www.facelit.in</a></div></div></footer>
-<div class="sticky"><a class="btn btn-call" href="tel:+917356657222">Call Clinic</a><a class="btn btn-wa" href="https://wa.me/917356657222?text=Hi%20Facelit%2C%20I%20would%20like%20to%20book%20a%20weight%20loss%20consultation." target="_blank" rel="noopener">WhatsApp</a></div>
+<a class="fab fab-wa" aria-label="WhatsApp" href="https://wa.me/917356657222?text=Hi%20Facelit%2C%20I%20would%20like%20to%20book%20a%20weight%20loss%20consultation." target="_blank" rel="noopener">💬</a><a class="fab fab-call" aria-label="Call" href="tel:+917356657222">📞</a><div class="sticky"><a class="btn btn-call" href="tel:+917356657222">Call Clinic</a><a class="btn btn-wa" href="https://wa.me/917356657222?text=Hi%20Facelit%2C%20I%20would%20like%20to%20book%20a%20weight%20loss%20consultation." target="_blank" rel="noopener">WhatsApp</a></div>
 <script>(function(){
 var w=document.getElementById("w"),h=document.getElementById("h");
 function bmi(){var m=h.value/100,b=w.value/(m*m);document.getElementById("wo").textContent=w.value+" kg";document.getElementById("ho").textContent=h.value+" cm";
