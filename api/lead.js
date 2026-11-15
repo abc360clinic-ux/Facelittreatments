@@ -9,7 +9,8 @@ module.exports = async (req, res) => {
   const name = String(b.name || '').trim().slice(0, 80);
   const phone = String(b.phone || '').replace(/\D/g, '').replace(/^91(?=\d{10}$)/, '');
   const city = String(b.city || 'Unknown').trim().slice(0, 40);
-  const concern = String(b.concern || '').trim().slice(0, 80);
+  const concern = String(b.concern || '').trim().slice(0, 120);
+  const service = String(b.service || 'medifacial').trim().slice(0, 40);
   const via = { whatsapp: 'Clicked WhatsApp', call: 'Clicked Call' }[b.via] || 'Booking form';
   if (!name || !/^[6-9]\d{9}$/.test(phone) || !concern || !b.consent) return res.status(400).json({ ok: false, error: 'invalid' });
   const key = process.env.RESEND_API_KEY, to = process.env.LEAD_TO_EMAIL;
@@ -21,8 +22,8 @@ module.exports = async (req, res) => {
     body: JSON.stringify({
       from: process.env.LEAD_FROM || 'Facelit Leads <onboarding@resend.dev>',
       to: to.split(',').map(s => s.trim()),
-      subject: `New medifacial enquiry [${city}] (${via}): ${name}`,
-      html: `<p><b>Name:</b> ${esc(name)}<br><b>Phone:</b> +91 ${phone}<br><b>Concern:</b> ${esc(concern)}<br><b>Action:</b> ${via}<br><b>Clinic:</b> ${esc(city)}<br><b>Source:</b> medifacials landing page</p>`
+      subject: `New ${esc(service)} enquiry [${city}] (${via}): ${name}`,
+      html: `<p><b>Name:</b> ${esc(name)}<br><b>Phone:</b> +91 ${phone}<br><b>Concern:</b> ${esc(concern)}<br><b>Action:</b> ${via}<br><b>Clinic:</b> ${esc(city)}<br><b>Source:</b> ${esc(service)} landing page</p>`
     })
   }); } catch (e) { detail = String(e); }
   if (r && !r.ok) detail = (await r.text()).slice(0, 300);

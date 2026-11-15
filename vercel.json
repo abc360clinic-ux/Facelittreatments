@@ -52,6 +52,10 @@
     {
       "source": "/medifacials-trivandrum/",
       "destination": "/medifacials/index.html"
+    },
+    {
+      "source": "/glp1-trivandrum",
+      "destination": "/glp1-trivandrum/index.html"
     }
   ]
 }
