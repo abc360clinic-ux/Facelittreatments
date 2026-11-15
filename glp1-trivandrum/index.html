@@ -151,6 +151,14 @@ body{font-size:16px;-webkit-text-size-adjust:100%}
 .g-grid .pill-wide{font-size:16px;padding:16px 14px;font-weight:600}
 }
 @media(max-width:900px){.g-grid{align-items:stretch}.g-grid .pill-wide{width:100%}}
+
+.jr{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:34px 0 16px;position:relative}
+.jr:before{content:"";position:absolute;top:34px;left:12.5%;right:12.5%;height:3px;background:linear-gradient(90deg,#3f7a58,#a8c5b2);border-radius:3px}
+.jr div{position:relative;display:flex;flex-direction:column;align-items:center;padding:0 8px}
+.jr i{font-style:normal;font-size:28px;width:68px;height:68px;border-radius:50%;background:#fff;border:3px solid #3f7a58;display:flex;align-items:center;justify-content:center;margin-bottom:12px;position:relative}
+.jr b{font:700 17px Onest,sans-serif;margin-bottom:2px}.jr span{font-size:14px;color:#666}
+@media(max-width:900px){.jr{grid-template-columns:minmax(0,1fr);gap:14px;margin:22px 0 10px;text-align:left}.jr:before{top:34px;bottom:34px;left:33px;right:auto;width:3px;height:auto}
+.jr div{flex-direction:row;align-items:center;gap:14px;padding:0}.jr i{margin:0;flex:none;width:68px;height:68px}.jr b{display:block}.jr div>*:not(i){text-align:left}.jr b,.jr span{display:block}}
 </style></head><body>
 <header class="nav"><a href="/glp1-trivandrum/"><img src="/assets/facelit-logo.svg" alt="Facelit" width="140" height="44"></a>
 <nav><a href="#steps">How it Works</a><a href="#benefits">Benefits</a><a href="#programme">Programme</a><a href="#doctor">Team</a><a href="#faq">FAQs</a></nav><a class="pill" href="#book" data-lead="form">Book Consultation</a></header>
@@ -164,11 +172,10 @@ body{font-size:16px;-webkit-text-size-adjust:100%}
 <p class="fine">GLP-1 medicines are prescription-only and suitable only after a doctor’s assessment. Results vary based on metabolism, adherence and lifestyle.</p></div>
 <div class="g-img"><img fetchpriority="high" decoding="async" src="/assets/glp-hero.webp" alt="Woman measuring her waist" width="1065" height="1477"></div></div></section>
 
-<section class="sec" id="compare"><div class="c center"><p class="eb">Why supervision helps</p><h2 class="h">Doctor-supervised programme <span class="vs">vs</span> <span class="alone">diet &amp; exercise alone</span></h2><p class="sb">Diet and exercise matter. A doctor adds the checks, the plan and the follow-up around them.</p>
-<div class="cmp"><div class="cmp-a"><h3>Diet &amp; exercise alone</h3><ul><li>A general plan, not built around your body</li><li>No tests to see what is holding your weight</li><li>Nobody to adjust things if progress stalls</li><li>No medical option if willpower is not enough</li></ul></div>
-<div class="cmp-b"><h3>Facelit GLP-1 programme</h3><ul><li>Doctor consultation and blood tests first</li><li>GLP-1 medication only if it suits you</li><li>Nutrition plan built around Kerala food</li><li>Follow-up reviews and body composition scans</li></ul></div></div>
-<p class="fine" style="margin:16px 0 24px"><em>Results may vary from person to person. Consultation with a healthcare professional is recommended.</em></p>
-<a class="pill" href="#book" data-lead="form">See What My Plan Would Look Like</a></div></section>
+<section class="sec" id="compare"><div class="c center"><h2 class="h">A doctor at every step</h2>
+<div class="jr"><div><i>🩺</i><b>Consult</b><span>Your health history</span></div><div><i>🔬</i><b>Blood tests</b><span>Know your numbers</span></div><div><i>🥗</i><b>Your plan</b><span>Treatment and food</span></div><div><i>📊</i><b>Follow-ups</b><span>Track and adjust</span></div></div>
+<p class="fine" style="margin:6px 0 22px"><em>Results vary from person to person.</em></p>
+<a class="pill" href="#book" data-lead="form">See My Plan</a></div></section>
 
 <section class="sec" id="why"><div class="c center"><p class="eb">Why a doctor matters</p><h2 class="h">Weight loss that starts with your health, not a dose</h2><p class="sb">GLP-1 is a prescription medicine. It works best when a doctor decides if it suits you, and stays with you afterwards.</p>
 <div class="strip"><div><i>🩺</i><b>Checked first</b><span>Consultation and tests before anything is prescribed.</span></div><div><i>🎯</i><b>Your plan, not a template</b><span>Treatment and food plan built around your body and goals.</span></div><div><i>📈</i><b>Reviewed regularly</b><span>Follow-ups to adjust as your body responds.</span></div><div><i>📊</i><b>Tracked properly</b><span>Follow-up reviews and body scans show your real progress.</span></div></div>
