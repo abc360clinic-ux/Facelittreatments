@@ -107,6 +107,10 @@ html,body{overflow-x:hidden}.g-grid>*,.fgrid>*,.bmi2>*,.doc-grid>*{min-width:0}
 .cmp-a{background:#fbf5ea;border:1px solid #efe1c4}.cmp-a h3{color:#b9852f}.cmp-a li:before{content:"–";position:absolute;left:4px;color:#b9852f;font-weight:700}
 .cmp-b{background:#2d4a3a;color:#fff}.cmp-b li:before{content:"✓";position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:50%;background:#fff;color:#2d4a3a;font-size:12px;display:flex;align-items:center;justify-content:center}
 @media(max-width:900px){.cmp{grid-template-columns:minmax(0,1fr);gap:12px}.cmp>div{padding:20px 18px;border-radius:18px}.cmp h3{font-size:18px}.cmp li{font-size:15px}}
+
+@media(max-width:900px){.g-grid{display:flex;flex-direction:column;gap:0}.g-grid>div:first-child{display:contents}
+.g-grid .badge{order:1;align-self:flex-start}.g-grid .g-h1{order:2;margin:16px 0 18px}.g-grid .g-img{order:3;width:100%;margin:0 0 20px}
+.g-grid .g-lead{order:4}.g-grid .pill-wide{order:5}.g-grid .tiles{order:6}.g-grid .fine{order:7}}
 </style></head><body>
 <header class="nav"><a href="/glp1-trivandrum/"><img src="/assets/facelit-logo.svg" alt="Facelit" width="140" height="44"></a>
 <nav><a href="#steps">How it Works</a><a href="#benefits">Benefits</a><a href="#programme">Programme</a><a href="#doctor">Team</a><a href="#faq">FAQs</a></nav><a class="pill" href="#book" data-lead="form">Book Consultation</a></header>
