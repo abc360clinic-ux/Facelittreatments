@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice"><rect width="400" height="400" fill="#eef2ec"/><circle cx="330" cy="70" r="46" fill="#f3e3c3"/>
-<defs><clipPath id="m"><rect x="215" y="50" width="150" height="300" rx="75"/></clipPath>
-<g id="f"><circle cx="130" cy="88" r="17" fill="#2b1d16"/><path d="M96 128a34 34 0 0 1 68 0q-34-22-68 0z" fill="#2b1d16"/><circle cx="130" cy="132" r="32" fill="#c98f6b"/><path d="M118 142q12 10 24 0" fill="none" stroke="#7a3f2a" stroke-width="3" stroke-linecap="round"/><circle cx="119" cy="128" r="3" fill="#2b1d16"/><circle cx="141" cy="128" r="3" fill="#2b1d16"/>
-<path d="M92 178q38-22 76 0l24 200h-124z" fill="#3f7a58"/><path d="M98 182l74 36-12 70-70-40z" fill="#b9852f"/><path d="M98 182l74 36" stroke="#f3e3c3" stroke-width="5"/><rect x="104" y="360" width="52" height="40" fill="#c98f6b"/></g></defs>
-<rect x="215" y="50" width="150" height="300" rx="75" fill="#fff"/><g clip-path="url(#m)"><g transform="translate(290 120) scale(.6) translate(-130 -60)"><use href="#f"/></g></g>
-<rect x="215" y="50" width="150" height="300" rx="75" fill="none" stroke="#2d4a3a" stroke-width="7"/>
-<use href="#f" transform="translate(-30 20)"/><path d="M62 70l6 12 12 6-12 6-6 12-6-12-12-6 12-6z" fill="#e6a04c"/></svg>
