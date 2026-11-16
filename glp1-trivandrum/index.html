@@ -292,9 +292,10 @@ var l=b.textContent;b.disabled=true;b.textContent="Sending...";
 fetch("/api/lead",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)}).then(function(r){if(!r.ok)throw 0;done(d)}).catch(function(){m.innerHTML="Sorry, something went wrong. Please call <a href=\""+TEL+"\">+91 73566 57222</a>.";m.className="fmsg err"}).finally(function(){b.disabled=false;b.textContent=l})})}
 function go(x){var a=document.createElement("a");a.href=x;a.style.display="none";document.body.appendChild(a);a.click()}
 wire(main,function(){location.href="/thank-you/"});
-wire(f2,function(d){window.dataLayer&&window.dataLayer.push({event:"lead_form_submit",lead_via:via});
-if(via=="form")return location.href="/thank-you/";
-go(via=="whatsapp"?"https://wa.me/"+WA+"?text="+encodeURIComponent("Hi Facelit, I am "+d.name+". I would like to book a GLP-1 weight loss consultation."):TEL)});
+wire(f2,function(d){if(via=="form")return location.href="/thank-you/";
+var ev="lead_"+via,dl=window.dataLayer=window.dataLayer||[],gone=0;
+function open_(){if(gone)return;gone=1;go(via=="whatsapp"?"https://wa.me/"+WA+"?text="+encodeURIComponent("Hi Facelit, I am "+d.name+". I would like to book a GLP-1 weight loss consultation."):TEL)}
+dl.push({event:ev,lead_via:via,lead_service:"GLP-1 weight loss",lead_city:"Trivandrum",eventCallback:open_,eventTimeout:1000});setTimeout(open_,1200)});
 var T={form:["Check if GLP-1 is right for you","Share a few details and our team will call you to confirm your consultation slot.","Request My Callback"],whatsapp:["Chat with us on WhatsApp","Share a few details first, then we’ll open WhatsApp for you.","Continue to WhatsApp"],call:["Call our clinic","Share a few details first, then we’ll connect you to call us.","Continue to Call"]};
 document.addEventListener("click",function(e){var a=e.target.closest("[data-lead]");if(!a)return;e.preventDefault();via=a.dataset.lead;var t=T[via];
 dlg.querySelector(".dlg-title").textContent=t[0];dlg.querySelector(".dlg-sub").textContent=t[1];f2.querySelector("button[type=submit]").textContent=t[2];f2.querySelector(".fmsg").textContent="";dlg.showModal()});
