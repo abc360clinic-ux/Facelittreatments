@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice"><rect width="400" height="400" fill="#dff0ea"/><circle cx="310" cy="95" r="44" fill="#f4c76b"/>
-<path d="M0 235q50-18 100 0t100 0 100 0 100 0v165H0z" fill="#7fb9a8"/><path d="M0 285q60-22 120 0t120 0 160 0v115H0z" fill="#efd9a8"/>
-<path d="M70 330q-6-120 18-190" fill="none" stroke="#7a5230" stroke-width="12" stroke-linecap="round"/>
-<g fill="#3f7a58"><ellipse cx="60" cy="128" rx="48" ry="12" transform="rotate(-25 60 128)"/><ellipse cx="118" cy="125" rx="48" ry="12" transform="rotate(25 118 125)"/><ellipse cx="88" cy="112" rx="40" ry="11" transform="rotate(-80 88 112)"/><ellipse cx="62" cy="150" rx="40" ry="11" transform="rotate(20 62 150)"/></g>
-<g transform="translate(225 160)"><circle cx="0" cy="0" r="24" fill="#c98f6b"/><path d="M-24 -4a24 24 0 0 1 48 0q-24-14-48 0z" fill="#2b1d16"/><path d="M-9 8q9 8 18 0" fill="none" stroke="#7a3f2a" stroke-width="3" stroke-linecap="round"/>
-<rect x="-26" y="26" width="52" height="86" rx="22" fill="#2d4a3a"/><path d="M-20 44l-30 40M20 44l32 30" stroke="#c98f6b" stroke-width="12" stroke-linecap="round"/>
-<path d="M-10 108l-28 78M12 108l34 62" stroke="#3a3f45" stroke-width="16" stroke-linecap="round"/><ellipse cx="-42" cy="192" rx="18" ry="8" fill="#fff"/><ellipse cx="52" cy="176" rx="18" ry="8" fill="#fff"/></g></svg>
